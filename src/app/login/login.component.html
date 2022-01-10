@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+    <div>
+        <h1 id="main">OnSearch </h1>
+        <hr>
+    </div>
+
+    <div id="exp">
+        <div id="lexp">
+            <div>
+                <span id="quotes">"</span>
+                <p>welcome to <b>OnSearch</b>! onsearch is an online book search app. This app will help you find books & ebooks from all over the Internet. You can find the
+                veraity of books down here starting from fiction, lifestyle, education, comics and so on. A perfect place for book enthusiasts.
+                </p>
+            </div>
+        </div>
+        <div id="rexp">
+            <img src="assets/images/book1.svg">
+        </div>
+    </div><br>
+
+    <div id="sign">
+        <button (click)="login()" id="button1">SIGNIN</button> 
+
+        <button (click)="signup()" id="button2">SIGNUP</button>
+    </div><br><br>
+    <div id="whole" *ngIf="log">
+        <h1>Login</h1>
+        
+        <form [formGroup]="form" (ngSubmit)="check()">
+            
+            <input type="text" formControlName="name" id="inp" placeholder="name"><br><br>
+            <input type="password" formControlName="password" id="inp" placeholder="password"><br><br>
+            <span id="str">{{string}}</span><br><br>
+            <div id="grid">
+                <button id="button3">LOGIN</button> 
+                <!-- <input type="submit" value="SIGNUP" (click)="signup()" id="button"> -->
+            </div>   
+        </form>
+        
+    </div>
+   
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#f3f4f5" fill-opacity="1" d="M0,192L48,170.7C96,149,192,107,288,96C384,85,480,107,576,149.3C672,192,768,256,864,240C960,224,1056,128,1152,106.7C1248,85,1344,139,1392,165.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+    </svg>
+</body>
+</html>

@@ -1,0 +1,192 @@
+body{
+    margin-top: -2.4%;
+    background-color: coral;
+    background-image: linear-gradient(135deg, #fc5c7d, #fc9928 );
+    background-repeat: no-repeat;
+    font-family: 'Sora', sans-serif;
+    color: white;
+}
+
+#main{
+    padding: 1% 1% 0.5% 1%; 
+    font-size: 4em;
+}
+
+#exp{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#lexp{
+    padding: 5% 15% 5% 15%;
+    font-size: 1.6em;
+    text-align: center; 
+}
+
+#lexp>div{
+    padding:5%;
+    border: 1px solid white;
+    border-radius: 1em;
+    box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.2), 15px 15px 40px 15px rgba(0, 0, 0, 0.19);
+}
+
+#lexp>div:hover{
+    box-shadow: 30px 30px 60px 30px rgba(0, 0, 0, 0.2), 15px 15px 40px 15px rgba(0, 0, 0, 0.19);
+}
+
+#rexp{
+    padding: 5% 15% 5% 10%;
+}
+
+#rexp>img{
+    width: 40vw;
+    height: 40vh;
+}
+
+#quotes{
+    font-size: 2em;
+    font-weight: bolder;
+    text-align: left;
+}
+
+#sign{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#button1{
+    color: black;
+    background-color: yellow;
+    font-family: 'Sora', sans-serif;
+    padding: 0.5% 1.2% 0.5% 1.2%;
+    font-size: 1em;
+    border:1px solid transparent;
+    width: 10vw;
+    text-align: center;
+    margin-left: 80%;
+    border-radius: 1em;
+}
+
+#button2{
+    color: black;
+    background-color: yellow;
+    font-family: 'Sora', sans-serif;
+    padding: 0.5% 1.2% 0.5% 1.2%;
+    font-size: 1em;
+    border:1px solid transparent;
+    width: 10vw;
+    text-align: center;
+    margin-left: 10%;
+    border-radius: 1em;
+}
+
+#button3{
+    color: black;
+    background-color: yellow;
+    font-family: 'Sora', sans-serif;
+    padding: 0.5% 1.2% 0.5% 1.2%;
+    font-size: 1em;
+    border:1px solid transparent;
+    width: 10vw;
+    text-align: center;
+    border-radius: 1em;
+}
+
+#button1:hover,#button2:hover,#button3:hover{
+    width: 10.5vw;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2), 3px 3px 13px 3px rgba(0, 0, 0, 0.19);
+}
+
+#whole{
+    text-align: center;
+    border: 1px solid white;
+    margin-left: 35%;
+    margin-right: 30%;
+    height: 40vh;
+}
+
+#whole>h1{
+    font-size: 3em;
+}
+
+input{
+    height: 4vh;
+    width: 20vw;
+    font-family: 'Sora', sans-serif;
+    padding: 1%;
+    font-size: 1.3em;
+    border-radius: 0.3em;
+    border: 0px;
+}
+
+#str{
+    color: red;
+}
+
+@media only screen and (max-width: 900px) {
+    body{
+        margin-top: -10%;
+    }
+
+    #main{
+        padding: 6% 0.5% 0.5% 0.5%; 
+        font-size: 2em;
+    }
+
+    #exp{
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+
+    #lexp{
+        padding: 5% 15% 5% 15%;
+        font-size: 1em;
+        text-align: center; 
+    }
+
+    #rexp{
+        text-align: center;
+    }
+    
+    #button1{
+        width: 12vh;
+        font-size: 0.7em;
+        margin-left: 60%;
+    }
+
+    #button2{
+        width: 12vh;
+        font-size: 0.7em;
+    }
+
+    #button3{
+        width: 12vh;
+        font-size: 0.7em;
+    }
+
+    #button1:hover,#button2:hover,#button3:hover{
+        width: 12.5vh;
+        box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2), 3px 3px 13px 3px rgba(0, 0, 0, 0.19);
+    }
+
+    #whole{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    #whole>h1{
+        font-size: 1.5em;  
+    }
+
+    input{
+        width: 40vw;
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #exp{
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+}

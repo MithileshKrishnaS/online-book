@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> 
+</head>
+<body>
+    <div id="whole">
+        <input type="search" placeholder="search books" [(ngModel)]="search"><button (click)="search_book()" id="sbtn"><i class="fas fa-search fa-2x"></i></button><br>
+        <span *ngIf="notfound">the book is not found </span>
+    </div>
+        <div id="list" *ngIf="check">
+            <div id="each" *ngFor="let li of list  ">
+                <div *ngIf="li.imageLinks.thumbnail!== undefined">
+                    <img src={{li.imageLinks.thumbnail}}  ><br>
+                </div>
+                <!-- <p>{{li.imageLinks.thumbnail}} </p><br> -->
+                <p>{{li.title}}</p><br>
+                <button id="lbtn" [routerLink]="['/book',li.industryIdentifiers[0].identifier]" (click)="book(li.industryIdentifiers[0].identifier)">View Book</button>
+            </div>
+        </div>
+    
+</body>
+</html>

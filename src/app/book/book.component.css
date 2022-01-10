@@ -1,0 +1,79 @@
+body{
+    background-color: coral;
+    background-image: linear-gradient(135deg, #fc5c7d, #fc9928 );
+    background-repeat: no-repeat;
+    font-family: 'Sora', sans-serif;
+    height: 100vh;
+    margin-top: 0;
+}
+
+#whole{
+    margin:0 10% 10% 10% ;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3%;
+}
+
+#title{
+    font-size: 3em;
+    color: tomato;
+}
+
+#author,#desc,#rate,#rc{
+    font-size: 1.2em;
+    color: black;
+    text-align: justify;
+}
+
+#left{
+    padding: 2%;
+}
+
+img{
+    width: 300px;
+    height: 450px;
+}
+
+#right{
+    padding: 10%;
+}
+
+#inside{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+a{
+    text-decoration: none;
+    padding: 0.5%;
+    background-color: yellow;
+    width: 15vw;
+    color: black;
+}
+
+a:hover{
+    color: blue;
+    width: 16vw;
+}
+
+@media only screen and (max-width: 900px) {
+    body{
+        height: 140vh;
+    }
+    
+    #whole{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-auto-flow: dense;
+    }
+
+    #title{
+        font-size: 1em;
+    }
+
+    #author,#desc,#rate,#rc{
+        font-size: 0.5em;
+    }
+}

@@ -96,7 +96,8 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": ["online-book/src/assets/embed.js",
+              "node_modules/jquery/dist/jquery.min.js"]
           }
         }
       }
