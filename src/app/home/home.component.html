@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title></title>
 </head>
 <body>
   <div id="first">
@@ -27,7 +28,7 @@
       </datalist><br><br>
     <div id="list">
         <div id="each" *ngFor="let li of list">
-            <img src={{li.book_image}}><br>
+            <img src={{li.book_image}} alt=""><br>
             <p>{{li.title}}</p><br>
             <button [routerLink]="['/book',li.primary_isbn10]" (click)="book(li.primary_isbn10)" id="book">View Book</button>
         </div>

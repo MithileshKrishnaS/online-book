@@ -6,21 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> 
+    <title></title>
 </head>
 <body>
     <div id="whole">
         <div id="left">
             <p id="title">{{this.books.title}}</p><br>
-            <p id="author"><i class="fas fa-user-alt fa-2x"></i> {{this.books.authors}}</p><br>
+            <p id="author"><em class="fas fa-user-alt fa-2x"></em> {{this.books.authors}}</p><br>
             <p id="desc">Description:</p>
             <p id="desc">{{this.books.description}}</p>
             <div id="inside">
-                <p id="rate"><i class="fas fa-star"></i> {{this.books.averageRating}}</p>
-                <p id="rc"><i class="fas fa-male"></i> {{this.books.ratingsCount}}</p><br>
+                <p id="rate"><em class="fas fa-star"></em> {{this.books.averageRating}}</p>
+                <p id="rc"><em class="fas fa-male"></em> {{this.books.ratingsCount}}</p><br>
             </div>
         </div>
         <div id="right">
-            <img src={{books.imageLinks.thumbnail}}><br><br>
+            <img src={{books.imageLinks.thumbnail}} alt=""><br><br>
             <a href={{this.books.previewLink}}>buy book</a>
         </div>
     </div>

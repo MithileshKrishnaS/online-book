@@ -15,7 +15,7 @@
         <div id="list" *ngIf="check">
             <div id="each" *ngFor="let li of list  ">
                 <div *ngIf="li.imageLinks.thumbnail!== undefined">
-                    <img src={{li.imageLinks.thumbnail}}  ><br>
+                    <img src={{li.imageLinks.thumbnail}}  alt=""><br>
                 </div>
                 <!-- <p>{{li.imageLinks.thumbnail}} </p><br> -->
                 <p>{{li.title}}</p><br>
