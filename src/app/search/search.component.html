@@ -17,7 +17,6 @@
                 <div *ngIf="li.imageLinks.thumbnail!== undefined">
                     <img src={{li.imageLinks.thumbnail}}  alt=""><br>
                 </div>
-                <!-- <p>{{li.imageLinks.thumbnail}} </p><br> -->
                 <p>{{li.title}}</p><br>
                 <button id="lbtn" [routerLink]="['/book',li.industryIdentifiers[0].identifier]" (click)="book(li.industryIdentifiers[0].identifier)">View Book</button>
             </div>

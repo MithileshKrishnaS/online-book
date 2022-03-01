@@ -46,10 +46,9 @@ export class LoginComponent implements OnInit {
   check()
   {
     console.log(this.form.value)
-    for(let i=0;i<this.users.length;i++)
+    for(let i of this.users)
     {
-      
-      if(this.form.value.name==this.users[i].name && this.form.value.password==this.users[i].password)
+      if(this.form.value.name==i.name && this.form.value.password==i.password)
       {
         this.service.auth(true);
         this.router.navigateByUrl("/home");

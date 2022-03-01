@@ -1,6 +1,5 @@
-import { Injectable } from '@angular/core';
+import { Injectable,Renderer2, Inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Renderer2, Inject } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 
 @Injectable({

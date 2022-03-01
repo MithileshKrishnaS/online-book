@@ -7,7 +7,7 @@ import { ServiceService  } from "../service.service";
   styleUrls: ['./search.component.css']
 })
 
-export class SearchComponent implements OnInit {
+export class SearchComponent {
   check=false;
   search:any='';
   books:any=[];
@@ -17,7 +17,7 @@ export class SearchComponent implements OnInit {
   images=""
   constructor(private service:ServiceService ) { }
 
-  ngOnInit(): void { }
+
 
   search_book()
   {

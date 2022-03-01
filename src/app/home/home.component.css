@@ -6,6 +6,10 @@
 #each{
     text-align: center;
     padding: 3%;
+    background-color: white;
+    color: black;
+    margin: 8%;
+    padding: 5%;
 }
 
 #main{
@@ -52,15 +56,6 @@ body{
     font-size: 1em;
     padding: 0.3%;
     font-family: 'Sora', sans-serif;
-}
-
-
-
-#each{
-    background-color: white;
-    color: black;
-    margin: 8%;
-    padding: 5%;
 }
 
 img{

@@ -31,7 +31,6 @@ export class SignupComponent implements OnInit {
       password:[''],
       cpassword:['']
     })
-    //console.log(this.form);
   }
 
   check()
@@ -63,10 +62,10 @@ export class SignupComponent implements OnInit {
     if(this.name=='' && this.email=='' && this.password=='' && this.cp=='')
     {
       var add=false;
-      for(let i=0;i<this.users.length;i++)
+      for(let i of this.users)
       {
-        console.log(this.nv+''+this.users[i].name)
-        if(this.nv==this.users[i].name)
+        console.log(this.nv+''+i.name)
+        if(this.nv==i.name)
         {
           add=true;
         }

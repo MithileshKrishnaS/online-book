@@ -12,14 +12,18 @@ export class HomeComponent implements OnInit {
   list:any=[]
   constructor(private service:ServiceService  ) { }
 
+  assaign(books:any)
+  {
+    for(let i of books.results.books)
+      {
+        this.list.push(i)
+      }
+  }
+
   ngOnInit(): void {
     this.service.books_fiction().subscribe( books => {
       this.books=books;
-      for(let i=0;i<this.books.results.books.length;i++)
-        {
-          this.list.push(this.books.results.books[i])
-        }
-        console.log(this.list)
+      this.assaign(this.books)
       })
   }
 
@@ -31,70 +35,49 @@ export class HomeComponent implements OnInit {
     {
       this.service.books_fiction().subscribe( books => {
         this.books=books;
-        for(let i=0;i<this.books.results.books.length;i++)
-          {
-            this.list.push(this.books.results.books[i])
-          }
+        this.assaign(this.books)
         })
     }
     if(this.categories==="Education")
     {
       this.service.books_education().subscribe( books => {
         this.books=books;
-        for(let i=0;i<this.books.results.books.length;i++)
-          {
-            this.list.push(this.books.results.books[i])
-          }
+        this.assaign(this.books)
         })
     }
     if(this.categories==="Culture")
     {
       this.service.books_culture().subscribe( books => {
         this.books=books;
-        for(let i=0;i<this.books.results.books.length;i++)
-          {
-            this.list.push(this.books.results.books[i])
-          }
+        this.assaign(this.books)
         })
     }
     if(this.categories==="Fashion")
     {
       this.service.books_fashion().subscribe( books => {
         this.books=books;
-        for(let i=0;i<this.books.results.books.length;i++)
-          {
-            this.list.push(this.books.results.books[i])
-          }
+        this.assaign(this.books)
         })
     }
     if(this.categories==="Food")
     {
       this.service.books_food().subscribe( books => {
         this.books=books;
-        for(let i=0;i<this.books.results.books.length;i++)
-          {
-            this.list.push(this.books.results.books[i])
-          }
+        this.assaign(this.books)
         })
     }
     if(this.categories==="Games")
     {
       this.service.books_games().subscribe( books => {
         this.books=books;
-        for(let i=0;i<this.books.results.books.length;i++)
-          {
-            this.list.push(this.books.results.books[i])
-          }
+        this.assaign(this.books)
         })
     }
     if(this.categories==="Manga")
     {
       this.service.books_manga().subscribe( books => {
         this.books=books;
-        for(let i=0;i<this.books.results.books.length;i++)
-          {
-            this.list.push(this.books.results.books[i])
-          }
+        this.assaign(this.books)
         })
     }
   }
