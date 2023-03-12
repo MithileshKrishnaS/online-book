@@ -9,6 +9,8 @@ import { BookComponent } from './book/book.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { SearchComponent } from './search/search.component';
+import { HeaderComponent } from './header/header.component';
+import { LandingComponent } from './landing/landing.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { SearchComponent } from './search/search.component';
     BookComponent,
     LoginComponent,
     SignupComponent,
-    SearchComponent
+    SearchComponent,
+    HeaderComponent,
+    LandingComponent
   ],
   imports: [
     BrowserModule,

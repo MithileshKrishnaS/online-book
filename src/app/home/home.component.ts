@@ -30,7 +30,6 @@ export class HomeComponent implements OnInit {
   changecat()
   {
     this.list=[]
-    console.log(this.categories)
     if(this.categories==="Fiction")
     {
       this.service.books_fiction().subscribe( books => {
@@ -85,6 +84,5 @@ export class HomeComponent implements OnInit {
   book(isbn:any)
   {
     this.service.getisbn(isbn);
-    console.log(isbn)
   }
 }

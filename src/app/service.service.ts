@@ -91,6 +91,7 @@ export class ServiceService {
   auth(value:any)
   {
     this.value=value;
+    localStorage.setItem('isLogin','true')
   }
 
 }

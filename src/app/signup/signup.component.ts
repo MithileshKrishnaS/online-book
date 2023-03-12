@@ -64,7 +64,6 @@ export class SignupComponent implements OnInit {
       var add=false;
       for(let i of this.users)
       {
-        console.log(this.nv+''+i.name)
         if(this.nv==i.name)
         {
           add=true;
@@ -79,8 +78,6 @@ export class SignupComponent implements OnInit {
         }
         this.users.push(store);
       }
-      
-      console.log(this.users);
       localStorage.setItem('data',JSON.stringify(this.users));
       this.router.navigateByUrl("/login");
     }

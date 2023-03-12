@@ -1,0 +1,17 @@
+<div class="header">
+    <div class="main">OnSearch </div>
+    <div>
+        <div class="sign" *ngIf="isLogin !== true">
+            <button (click)="login()" class="btn button1">SIGN IN</button>
+            <button (click)="signup()" class="btn button2">SIGN UP</button>
+        </div>
+        <div *ngIf="isLogin == true">
+            <div class="after_login">
+                <div class="search">
+                    <em class="fas fa-search" [routerLink]="['/search']"></em>
+                </div>
+                <button (click)="logout()" class="btn button2">LOG OUT</button>
+            </div>
+        </div>
+    </div>
+</div>

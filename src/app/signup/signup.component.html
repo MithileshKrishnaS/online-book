@@ -1,51 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-   <title></title>
-</head>
-<body>
-    <div id="whole">
-        <div>
-            <h1 id="main">OnSearch </h1>
-            <hr>
+<div>
+    <div class="wholeDiv">
+        <div class="leftImg">
+            <img src="assets/images/reading.svg" alt="">
+        </div>
+        <div class="whole">
+            <div class="welcome">SIGN UP</div>
+            <form [formGroup]="form" (ngSubmit)="check()" class="login-form">
+                <div class="input-box">
+                    <label for="name">Name</label>
+                    <input type="text" id="inp" formControlName="name" [(ngModel)]="nv" placeholder="name" name="name">
+                </div>
+                <div class="errtext">{{name}}</div>
+                <div class="input-box">
+                    <label for="email">Email</label>
+                    <input type="email" id="inp" formControlName="email" [(ngModel)]="ev" placeholder="email" name="email">
+                </div>
+                <div class="errtext">{{email}}</div>
+                <div class="input-box">
+                    <label for="password">Password</label>
+                    <input type="password" id="inp" formControlName="password" [(ngModel)]="pv" placeholder="password" name="password">
+                </div>
+                <div class="errtext">{{password}}</div>
+                <div class="input-box">
+                    <label for="reenterpassword">Re enter Password</label>
+                    <input type="password" id="inp" formControlName="cpassword" placeholder="confirm password" name="reenterpassword">
+                </div>
+                <div class="errtext">{{cp}}</div>
+                <button class="btn">SUBMIT</button>
+            </form>
         </div>
     </div>
-        <div id="exp">
-            <div id="lexp">
-                <div>
-                    <span id="quotes">"</span>
-                    <p>welcome to <strong>onsearch</strong>  Signup page , enter a valid username , email and password and click submit to validate.
-                        if any one of the fieldes is invalid then the form will not be validated. if all the fields are filled correctly
-                        then you will be redirected to login page.
-                    </p>
-                </div>
-            </div>
-            <div id="rexp">
-                <h1 id="sup">Signup </h1><br>
-        
-                <form [formGroup]="form" (ngSubmit)="check()">
-            
-                    <input type="text" id="inp" formControlName="name" [(ngModel)]="nv" placeholder="name"><br>
-                    <span>{{name}}</span><br><br>
-                
-                    <input type="email" id="inp" formControlName="email" [(ngModel)]="ev" placeholder="email"><br>
-                    <span>{{email}}</span><br><br>
-                
-                    <input type="password" id="inp" formControlName="password" [(ngModel)]="pv" placeholder="password"><br>
-                    <span>{{password}}</span><br><br>
-                            
-                    <input type="password" id="inp" formControlName="cpassword" placeholder="confirm password"><br>
-                    <span>{{cp}}</span><br><br>
-                    <button>SUBMIT</button>
-                </form>
-            </div>
-        </div><br>
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#f3f4f5" fill-opacity="1" d="M0,192L48,170.7C96,149,192,107,288,96C384,85,480,107,576,149.3C672,192,768,256,864,240C960,224,1056,128,1152,106.7C1248,85,1344,139,1392,165.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-        </svg>
-   
-</body>
-</html>
+</div>
 
 

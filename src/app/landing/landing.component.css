@@ -1,0 +1,49 @@
+.main{
+    padding: 1% 1% 0.5% 1%; 
+    font-size: 4em;
+}
+
+.exp{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.lexp{
+    padding: 5% 15% 5% 15%;
+    font-size: 1.6em;
+    text-align: center; 
+}
+
+.lexp>div{
+    padding:5%;
+    border: 1px solid white;
+    border-radius: 1em;
+    box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.2), 15px 15px 40px 15px rgba(0, 0, 0, 0.19);
+}
+
+.lexp>div:hover{
+    box-shadow: 30px 30px 60px 30px rgba(0, 0, 0, 0.2), 15px 15px 40px 15px rgba(0, 0, 0, 0.19);
+}
+
+.rexp{
+    padding: 5% 15% 5% 10%;
+}
+
+.rexp>img{
+    width: 40vw;
+    height: 40vh;
+}
+
+.boldFont {
+    font-size: 80px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.quotes{
+    font-size: 2em;
+    font-weight: bolder;
+    text-align: left;
+}

@@ -8,7 +8,7 @@ import { ServiceService } from './service.service';
 export class AuthGuard implements CanActivate {
   constructor(private service:ServiceService,private router: Router) {}
   canActivate():any{
-    if(this.service.login())
+    if(localStorage.getItem('isLogin'))
     {
       return true;
     }

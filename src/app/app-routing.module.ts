@@ -5,10 +5,12 @@ import { BookComponent } from './book/book.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { SearchComponent }from './search/search.component';
+import { LandingComponent } from './landing/landing.component';
 import { AuthGuard } from './auth.guard';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/login', pathMatch: 'full' },
+  // { path: '', redirectTo: '/login', pathMatch: 'full' },
+  {path : '', component: LandingComponent},
   {path:'home',component:HomeComponent,canActivate:[AuthGuard]},
   {path:'book/:id',component:BookComponent,canActivate:[AuthGuard]},
   {path:'login',component:LoginComponent},

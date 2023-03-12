@@ -29,7 +29,6 @@ export class SearchComponent {
     {
       this.notfound=true;
     }
-    console.log(this.books.items)
     for(let i=0;i<this.books.items.length;i++)
     {
       this.list.push(this.books.items[i].volumeInfo); 
@@ -38,7 +37,6 @@ export class SearchComponent {
         const key="imageLinks";
         this.list[i][key]={thumbnail:"assets/images/content.png"};
       }
-      console.log(this.list[i])
     }
     })
   }
